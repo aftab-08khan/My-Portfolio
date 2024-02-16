@@ -17,8 +17,8 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 54px;
     @include mobile {
+      margin-top: 54px;
       width: 100%;
       gap: 16px;
       align-items: center;

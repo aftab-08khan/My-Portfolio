@@ -10,11 +10,11 @@ const items = [
     title: "HTML CSS JAVASCRIPT",
   },
   {
-    demo: "#",
+    demo: "https://makbyte.io/",
     id: 2,
-    img: "https://images.unsplash.com/photo-1707408538977-7522b6090b27?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D",
-    desc: "gbsnh rg ergrreijgtbw hijtry tio tr vbfdbfiogerter vvdsfwjrwergo crigdfodfv wfjiwewejie",
-    title: "HTML CSS Javascript",
+    img: "public/Screenshot (14).png",
+    desc: "Utilizing the cutting-edge capabilities of Next.js, we crafted a dynamic and responsive software company website that seamlessly integrates client-side rendering for lightning-fast performance. Leveraging Next.js's server-side rendering.",
+    title: "Next Js",
   },
   {
     demo: "https://tejasengineeringworks.co.in/",
@@ -24,11 +24,11 @@ const items = [
     title: "Next Js",
   },
   {
-    demo: "#",
+    demo: "",
     id: 4,
-    img: "https://images.unsplash.com/photo-1682686580849-3e7f67df4015?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
-    desc: "gbsnh rg ergrreijgtbw hijtry tio tr vbfdbfiogerter vvdsfwjrwergo crigdfodfv wfjiwewejie",
-    title: "Vite",
+    img: "public/Screenshot (13).png",
+    desc: "In crafting my portfolio, I leveraged the speed and efficiency of Vite, harnessing its powerful build system to streamline development. With Vite's seamless hot module replacement and lightning-fast bundling",
+    title: "Vite & SCSS",
   },
 ];
 const SingleSection = ({ item }) => {

@@ -75,7 +75,7 @@ const Hero = () => {
         {/* </div> */}
 
         <div className="heroImage">
-          <img src="public/hero1-removebg.png"></img>
+          <img src="/hero1-removebg.png"></img>
         </div>
       </div>
     </div>

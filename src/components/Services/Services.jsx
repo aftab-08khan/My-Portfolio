@@ -1,10 +1,10 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Services.scss";
 import { animate, motion, useInView } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { useRef, use } from "react";
+
 const variants = {
   initial: { x: -500, y: 100, opacity: 0 },
   animate: {
@@ -17,33 +17,50 @@ const variants = {
     },
   },
 };
+
 const BoxData = [
   {
-    title: "brand1",
-    desc: "It seems like your request is a bit vague. Could you please provide more details or clarify what specific content yous information, advice, creative writing, or anything else.",
+    title: "HTML",
+    desc: "public/IMG_5341-removebg-preview.png",
   },
   {
-    title: "brand2",
-    desc: "It seems like your request is a bit vague. Could you please provide more details or clarify what specific content yous information, advice, creative writing, or anything else.",
+    title: "CSS",
+    desc: "public/css-removebg-preview.png",
   },
   {
-    title: "brand3",
-    desc: "It seems like your request is a bit vague. Could you please provide more details or clarify what specific content yous information, advice, creative writing, or anything else.",
+    title: "JAVASCRIPT",
+    desc: "public/IMG_5340-removebg-preview.png",
   },
   {
-    title: "brand4",
-    desc: "It seems like your request is a bit vague. Could you please provide more details or clarify what specific content yous information, advice, creative writing, or anything else.",
+    title: "REACT",
+    desc: "public/IMG_5357-removebg-preview.png",
   },
 ];
+
 const Services = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 738);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <motion.div
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
       ref={ref}
       animate={"animate"}
     >
@@ -56,7 +73,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp"></img>
+          <img src="/people.webp" alt="people"></img>
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Unique </motion.b>
             Ideas
@@ -71,28 +88,20 @@ const Services = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer">
-        {/* Check viewport width and render carousel only if width <= 738px */}
-        {window.innerWidth <= 738 ? (
+        {isMobile ? (
           <Slider>
             {BoxData.map((e, index) => (
               <div key={index} className="box">
                 <h2>{e.title}</h2>
-                <p>{e.desc}</p>
-                <button>Go</button>
+                <img src={e.desc} alt={e.title} />
               </div>
             ))}
           </Slider>
         ) : (
-          // Render individual brand cards without carousel
           BoxData.map((e, index) => (
-            <motion.div
-              key={index}
-              className="box"
-              whileHover={{ background: "lightgray", color: "black" }}
-            >
+            <motion.div key={index} className="box">
               <h2>{e.title}</h2>
-              <p>{e.desc}</p>
-              <button>Go</button>
+              <img src={e.desc} alt={e.title} />
             </motion.div>
           ))
         )}

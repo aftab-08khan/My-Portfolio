@@ -88,6 +88,7 @@
   .listContainer {
     flex: 2;
     display: flex;
+    justify-content: center; /* Center horizontally */
     padding: 0 8%;
     max-width: 1366px;
     @include mobile {
@@ -96,12 +97,15 @@
     .box {
       padding: 18px;
       display: flex;
-      border: 0.5px solid gray;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
       gap: 18px;
-      p {
-        font-size: 14px;
+      text-align: center;
+
+      img {
+        width: 200px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
       }
       button {
         padding: 10px;
@@ -114,37 +118,16 @@
         }
       }
     }
-  }
-  .slick-next:before,
-  .slick-prev:before {
-    font-size: 28px;
-  }
-  .slick-slider {
-    margin: 0 -15px; // Adjust margins as needed
-  }
 
-  .slick-slide {
-    padding: 0 24px; // Adjust padding as needed
-  }
-
-  .slick-prev,
-  .slick-next {
-    font-size: 36px;
-    line-height: 1;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    &.slick-disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
+    @media screen and (max-width: 738px) {
+      .box {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        img {
+          width: 100% !important; /* Set width to 100% for smaller screens */
+        }
+      }
     }
-  }
-
-  .slick-prev {
-    left: 10px;
-  }
-
-  .slick-next {
-    right: 10px;
   }
 }

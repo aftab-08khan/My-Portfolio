@@ -54,13 +54,13 @@ const Contact = () => {
         <motion.div className="item" variants={variants}>
           <h2>E-Mail</h2>
           <a href="#">
-            <span>akkhanaftab08@gmail.com</span>
+            <span>omeyrvora712@gmail.com</span>
           </a>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <a href="#">
-            <span>+917208609566</span>
+            <span>+917678010354</span>
           </a>
         </motion.div>
         <motion.div className="item" variants={variants}>

@@ -5,7 +5,7 @@ const items = [
   {
     demo: "https://cashncarry.netlify.app/#",
     id: 1,
-    img: "public/Screenshot (9).png",
+    img: "./Screenshot (9).png",
     desc: "Dive into my clothing shop project, where HTML structures, CSS styles, and JavaScript functionalities converge to redefine online fashion retailing. Elevate user experiences, streamline navigation, and showcase the latest trends effortlessly.",
     title: "HTML CSS JAVASCRIPT",
   },
@@ -13,7 +13,7 @@ const items = [
     demo: "https://aurora-grove-omeyr.netlify.app/",
     id: 2,
     img: "./Screenshot (47).png",
-    desc: "gbsnh rg ergrreijgtbw hijtry tio tr vbfdbfiogerter vvdsfwjrwergo crigdfodfv wfjiwewejie",
+    desc: "Experience the great outdoors with Aurora Group Camping! Nestled in the heart of nature, our campgrounds offer an escape from the hustle and bustle of city life. Whether you're a seasoned camper or new to the adventure, we have everything you need for an unforgettable outdoor experience.",
     title: "HTML CSS Javascript",
   },
   {
@@ -27,7 +27,7 @@ const items = [
     demo: "https://my-portfolio-seven-pi-59.vercel.app/ ",
     id: 4,
     img: "./Screenshot (45).png",
-    desc: "gbsnh rg ergrreijgtbw hijtry tio tr vbfdbfiogerter vvdsfwjrwergo crigdfodfv wfjiwewejie",
+    desc: "Welcome to my portfolio! I'm a skilled web developer with expertise in Vite, Framer Motion, and React. Explore my projects showcasing innovative designs and seamless user experiences. Contact me to discuss how I can bring your web development ideas to life.",
     title: "Vite",
   },
 ];

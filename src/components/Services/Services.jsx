@@ -21,19 +21,19 @@ const variants = {
 const BoxData = [
   {
     title: "HTML",
-    desc: "public/IMG_5341-removebg-preview.png",
+    desc: "./IMG_5341-removebg-preview.png",
   },
   {
     title: "CSS",
-    desc: "public/css-removebg-preview.png",
+    desc: "./css-removebg-preview.png",
   },
   {
     title: "JAVASCRIPT",
-    desc: "public/IMG_5340-removebg-preview.png",
+    desc: "./IMG_5340-removebg-preview.png",
   },
   {
     title: "REACT",
-    desc: "public/IMG_5357-removebg-preview.png",
+    desc: "./IMG_5357-removebg-preview.png",
   },
 ];
 
